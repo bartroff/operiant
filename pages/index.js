@@ -5,7 +5,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section style={styles.hero}>
         <img 
-          src="/logo.png" 
+          src="/operiant/logo.png" 
           alt="Operiant Logo" 
           style={styles.logo}
         />
