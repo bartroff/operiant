@@ -54,15 +54,14 @@ export default function Home() {
             </h1>
 
             <p style={styles.heroText}>
-              Senior advisory and interim leadership for organisations
-              operating security-critical and business-critical technology
-              environments.
+              Senior advisory and interim leadership for security-critical 
+			  and business-critical technology environments.
             </p>
 
             <p style={styles.heroSubtext}>
-              Helping organisations strengthen cyber security, deliver complex
-              security programmes, work effectively with authorities and
-              regulators, and maintain resilient, stable IT operations.
+              Helping organisations strengthen cyber security, deliver complex 
+			  security programmes, work effectively with authorities and 
+			  regulators, and maintain resilient, stable operations.
             </p>
 
             <div style={styles.heroActions}>
@@ -83,7 +82,7 @@ export default function Home() {
         <p style={styles.sectionLabel}>FOCUSED LEADERSHIP</p>
 
         <h2 style={styles.largeHeading}>
-          Security leadership that protects operations.
+          Security leadership. Operational resilience.
         </h2>
 
         <p style={styles.introText}>
@@ -262,20 +261,20 @@ const styles = {
     borderBottom: "1px solid rgba(104, 167, 220, 0.14)",
   },
 
-  navBrand: {
+    navBrand: {
     display: "flex",
     alignItems: "center",
-    gap: "12px",
+    gap: "14px",
     color: "#ffffff",
     textDecoration: "none",
     fontWeight: 700,
-    letterSpacing: "4px",
-    fontSize: "18px",
+    letterSpacing: "3.2px",
+    fontSize: "19px",
   },
 
   navLogo: {
-    width: "42px",
-    height: "42px",
+    width: "48px",
+    height: "48px",
     objectFit: "contain",
   },
 
@@ -302,20 +301,12 @@ const styles = {
   },
 
   hero: {
-    minHeight: "720px",
+    minHeight: "640px",
     position: "relative",
     display: "flex",
     alignItems: "center",
-
-    /*
-      Temporary stock image.
-
-      Replace this later with:
-      url("/operiant/images/operiant-hero.webp")
-    */
     backgroundImage:
       'url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85")',
-
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
@@ -330,36 +321,36 @@ const styles = {
   heroInner: {
     position: "relative",
     zIndex: 2,
-    width: "88%",
-    maxWidth: "1280px",
+    width: "90%",
+    maxWidth: "1320px",
     margin: "0 auto",
   },
 
   heroContent: {
-    maxWidth: "760px",
+    maxWidth: "820px",
   },
 
   brandLockup: {
     display: "flex",
     alignItems: "center",
-    gap: "20px",
-    marginBottom: "38px",
+    gap: "18px",
+    marginBottom: "28px",
   },
 
   logo: {
-    width: "108px",
-    height: "108px",
+    width: "92px",
+    height: "92px",
     objectFit: "contain",
-    filter: "drop-shadow(0 10px 30px rgba(36,145,235,0.16))",
+    backgroundColor: "transparent",
   },
 
   brandName: {
-    fontSize: "44px",
+    fontSize: "38px",
     fontWeight: 700,
     color: "#ffffff",
-    letterSpacing: "8px",
+    letterSpacing: "6px",
   },
-
+  
   eyebrow: {
     color: "#58aef5",
     fontSize: "13px",
@@ -370,9 +361,9 @@ const styles = {
 
   heroTitle: {
     margin: 0,
-    fontSize: "clamp(44px, 5.3vw, 76px)",
-    lineHeight: 1.04,
-    letterSpacing: "-2.2px",
+    fontSize: "clamp(42px, 4.8vw, 68px)",
+    lineHeight: 1.03,
+    letterSpacing: "-1.8px",
     color: "#ffffff",
     fontWeight: 700,
   },
@@ -426,9 +417,9 @@ const styles = {
   },
 
   introSection: {
-    maxWidth: "1120px",
+    maxWidth: "1180px",
     margin: "0 auto",
-    padding: "110px 6% 42px",
+    padding: "82px 6% 30px",
   },
 
   sectionLabel: {
@@ -457,9 +448,9 @@ const styles = {
   },
 
   section: {
-    maxWidth: "1120px",
+    maxWidth: "1180px",
     margin: "0 auto",
-    padding: "30px 6% 40px",
+    padding: "24px 6% 40px",
   },
 
   serviceGrid: {
