@@ -219,7 +219,7 @@ export default function Home() {
             operational resilience or security programme requirements.
           </p>
 
-          <a href="mailto:your@email.com" style={styles.primaryButton}>
+          <a href="mailto:contact@operiant.dk" style={styles.primaryButton}>
             Get in touch
           </a>
         </div>
@@ -303,16 +303,16 @@ const styles = {
   },
 
   hero: {
-    minHeight: "610px",
+    minHeight: "620px",
     position: "relative",
     display: "flex",
     alignItems: "center",
 
     backgroundImage:
-      'url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85")',
+      'url("/operiant/images/operiant-hero.png")',
 
     backgroundSize: "cover",
-    backgroundPosition: "72% center",
+    backgroundPosition: "center center",
     overflow: "hidden",
   },
 
@@ -320,7 +320,7 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(90deg, rgba(4,16,29,0.99) 0%, rgba(4,16,29,0.97) 32%, rgba(4,16,29,0.90) 48%, rgba(4,16,29,0.72) 64%, rgba(4,16,29,0.32) 100%)",
+      "linear-gradient(90deg, rgba(4,16,29,0.88) 0%, rgba(4,16,29,0.74) 34%, rgba(4,16,29,0.38) 58%, rgba(4,16,29,0.08) 100%)",
   },
 
   heroInner: {
@@ -334,7 +334,7 @@ const styles = {
   },
 
   heroContent: {
-    maxWidth: "770px",
+    maxWidth: "690px",
   },
 
   brandLockup: {
@@ -511,7 +511,7 @@ const styles = {
   capabilitiesSection: {
     maxWidth: "1180px",
     margin: "0 auto",
-    padding: "12px 6% 90px",
+    padding: "12px 6% 70px",
   },
 
   capabilityGrid: {
@@ -547,7 +547,7 @@ const styles = {
   },
 
   experienceInner: {
-    maxWidth: "980px",
+    maxWidth: "1040px",
     margin: "0 auto",
   },
 
