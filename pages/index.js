@@ -33,7 +33,7 @@ export default function Home() {
           <div style={styles.heroContent}>
             <div style={styles.brandLockup}>
               <img
-                src="Operiant_logo_transparent_Cropped.png"
+                src="Operiant_logo_transparent_Logo_Only.png"
                 alt="Operiant"
                 style={styles.logo}
               />
@@ -340,14 +340,14 @@ const styles = {
   brandLockup: {
     display: "flex",
     alignItems: "center",
-    marginBottom: "24px",
+    marginBottom: "20px",
   },
 
   logo: {
-    width: "190px",
-    height: "auto",
+    width: "108px",
+    height: "108px",
     objectFit: "contain",
-    filter: "drop-shadow(0 8px 24px rgba(36,145,235,0.10))",
+    filter: "drop-shadow(0 8px 24px rgba(36,145,235,0.14))",
   },
 
   brandName: {
