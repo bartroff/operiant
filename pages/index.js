@@ -5,7 +5,7 @@ export default function Home() {
       <nav style={styles.nav}>
         <a href="#top" style={styles.navBrand}>
           <img
-            src="/operiant/logo.png"
+            src="Operiant_logo_transparent_Logo_Only.png"
             alt="Operiant"
             style={styles.navLogo}
           />
@@ -33,12 +33,12 @@ export default function Home() {
           <div style={styles.heroContent}>
             <div style={styles.brandLockup}>
               <img
-                src="/operiant/logo.png"
-                alt="Operiant Logo"
+                src="Operiant_logo_transparent_Cropped.png"
+                alt="Operiant"
                 style={styles.logo}
               />
 
-              <span style={styles.brandName}>OPERIANT</span>
+              
             </div>
 
             <p style={styles.eyebrow}>
@@ -273,8 +273,8 @@ const styles = {
   },
 
   navLogo: {
-    width: "46px",
-    height: "46px",
+    width: "40px",
+    height: "40px",
     objectFit: "contain",
   },
 
@@ -309,7 +309,7 @@ const styles = {
     alignItems: "center",
 
     backgroundImage:
-      'url("/operiant/images/operiant-hero.png")',
+      'url("images/operiant-hero.png")',
 
     backgroundSize: "cover",
     backgroundPosition: "center center",
@@ -340,15 +340,14 @@ const styles = {
   brandLockup: {
     display: "flex",
     alignItems: "center",
-    gap: "18px",
-    marginBottom: "26px",
+    marginBottom: "24px",
   },
 
   logo: {
-    width: "92px",
-    height: "92px",
+    width: "190px",
+    height: "auto",
     objectFit: "contain",
-    filter: "drop-shadow(0 8px 24px rgba(36,145,235,0.12))",
+    filter: "drop-shadow(0 8px 24px rgba(36,145,235,0.10))",
   },
 
   brandName: {
