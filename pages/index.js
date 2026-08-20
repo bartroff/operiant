@@ -248,20 +248,20 @@ const styles = {
   },
 
   nav: {
-    minHeight: "76px",
-    padding: "0 6%",
+    minHeight: "72px",
+    padding: "0 5.5%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     position: "sticky",
     top: 0,
     zIndex: 50,
-    backgroundColor: "rgba(5, 17, 29, 0.94)",
+    backgroundColor: "rgba(5, 17, 29, 0.95)",
     backdropFilter: "blur(12px)",
-    borderBottom: "1px solid rgba(104, 167, 220, 0.14)",
+    borderBottom: "1px solid rgba(104, 167, 220, 0.12)",
   },
 
-    navBrand: {
+  navBrand: {
     display: "flex",
     alignItems: "center",
     gap: "14px",
@@ -269,18 +269,18 @@ const styles = {
     textDecoration: "none",
     fontWeight: 700,
     letterSpacing: "3.2px",
-    fontSize: "19px",
+    fontSize: "18px",
   },
 
   navLogo: {
-    width: "48px",
-    height: "48px",
+    width: "46px",
+    height: "46px",
     objectFit: "contain",
   },
 
   navLinks: {
     display: "flex",
-    gap: "28px",
+    gap: "26px",
     alignItems: "center",
   },
 
@@ -288,84 +288,92 @@ const styles = {
     color: "#b7c7d8",
     textDecoration: "none",
     fontSize: "14px",
+    fontWeight: 500,
   },
 
   navButton: {
-    padding: "11px 18px",
-    borderRadius: "7px",
+    padding: "10px 18px",
+    borderRadius: "6px",
     backgroundColor: "#258be8",
     color: "#ffffff",
     textDecoration: "none",
     fontSize: "14px",
     fontWeight: 600,
+    boxShadow: "0 6px 18px rgba(37,139,232,0.18)",
   },
 
   hero: {
-    minHeight: "640px",
+    minHeight: "610px",
     position: "relative",
     display: "flex",
     alignItems: "center",
+
     backgroundImage:
       'url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85")',
+
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "72% center",
+    overflow: "hidden",
   },
 
   heroOverlay: {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(90deg, rgba(4,16,29,0.98) 0%, rgba(4,16,29,0.94) 43%, rgba(4,16,29,0.65) 68%, rgba(4,16,29,0.28) 100%)",
+      "linear-gradient(90deg, rgba(4,16,29,0.99) 0%, rgba(4,16,29,0.97) 32%, rgba(4,16,29,0.90) 48%, rgba(4,16,29,0.72) 64%, rgba(4,16,29,0.32) 100%)",
   },
 
   heroInner: {
     position: "relative",
     zIndex: 2,
-    width: "90%",
-    maxWidth: "1320px",
+    width: "89%",
+    maxWidth: "1180px",
     margin: "0 auto",
+    paddingTop: "18px",
+    paddingBottom: "18px",
   },
 
   heroContent: {
-    maxWidth: "820px",
+    maxWidth: "770px",
   },
 
   brandLockup: {
     display: "flex",
     alignItems: "center",
     gap: "18px",
-    marginBottom: "28px",
+    marginBottom: "26px",
   },
 
   logo: {
     width: "92px",
     height: "92px",
     objectFit: "contain",
-    backgroundColor: "transparent",
+    filter: "drop-shadow(0 8px 24px rgba(36,145,235,0.12))",
   },
 
   brandName: {
-    fontSize: "38px",
+    fontSize: "36px",
     fontWeight: 700,
     color: "#ffffff",
     letterSpacing: "6px",
   },
-  
+
   eyebrow: {
     color: "#58aef5",
-    fontSize: "13px",
-    letterSpacing: "2.6px",
+    fontSize: "12px",
+    letterSpacing: "2.5px",
     fontWeight: 700,
     marginBottom: "18px",
   },
 
   heroTitle: {
     margin: 0,
-    fontSize: "clamp(42px, 4.8vw, 68px)",
-    lineHeight: 1.03,
-    letterSpacing: "-1.8px",
+    fontSize: "clamp(42px, 4.4vw, 66px)",
+    lineHeight: 1.02,
+    letterSpacing: "-1.7px",
     color: "#ffffff",
     fontWeight: 700,
+    maxWidth: "760px",
   },
 
   accent: {
@@ -373,144 +381,148 @@ const styles = {
   },
 
   heroText: {
-    maxWidth: "670px",
+    maxWidth: "700px",
     color: "#d5e1eb",
-    fontSize: "20px",
-    lineHeight: 1.65,
-    marginTop: "28px",
+    fontSize: "18px",
+    lineHeight: 1.6,
+    marginTop: "26px",
     marginBottom: "10px",
   },
 
   heroSubtext: {
-    maxWidth: "690px",
+    maxWidth: "720px",
     color: "#aebfd0",
-    fontSize: "16px",
-    lineHeight: 1.7,
+    fontSize: "15px",
+    lineHeight: 1.65,
     marginBottom: 0,
   },
 
   heroActions: {
     display: "flex",
-    gap: "16px",
-    marginTop: "32px",
+    gap: "14px",
+    marginTop: "28px",
     flexWrap: "wrap",
   },
 
   primaryButton: {
     display: "inline-block",
-    padding: "14px 24px",
+    padding: "13px 22px",
     backgroundColor: "#258be8",
     color: "#ffffff",
     textDecoration: "none",
-    borderRadius: "7px",
+    borderRadius: "6px",
     fontWeight: 600,
-    boxShadow: "0 8px 24px rgba(21,111,194,0.24)",
+    fontSize: "15px",
+    boxShadow: "0 8px 22px rgba(21,111,194,0.22)",
   },
 
   secondaryButton: {
     display: "inline-block",
-    padding: "13px 23px",
+    padding: "12px 22px",
     color: "#c8d8e7",
     border: "1px solid rgba(157,190,221,0.28)",
     textDecoration: "none",
-    borderRadius: "7px",
+    borderRadius: "6px",
+    fontSize: "15px",
+    backgroundColor: "rgba(5,19,33,0.18)",
   },
 
   introSection: {
     maxWidth: "1180px",
     margin: "0 auto",
-    padding: "82px 6% 30px",
+    padding: "62px 6% 24px",
   },
 
   sectionLabel: {
     color: "#4fa8f4",
     fontWeight: 700,
-    letterSpacing: "2.5px",
+    letterSpacing: "2.4px",
     fontSize: "12px",
-    marginBottom: "18px",
+    marginBottom: "16px",
   },
 
   largeHeading: {
-    maxWidth: "780px",
-    margin: "0 0 24px",
+    maxWidth: "760px",
+    margin: "0 0 20px",
     color: "#ffffff",
-    fontSize: "clamp(34px, 4vw, 50px)",
-    lineHeight: 1.1,
-    letterSpacing: "-1.2px",
+    fontSize: "clamp(32px, 3.5vw, 46px)",
+    lineHeight: 1.08,
+    letterSpacing: "-1px",
   },
 
   introText: {
-    maxWidth: "840px",
+    maxWidth: "860px",
     margin: 0,
     color: "#aebfd0",
-    fontSize: "18px",
-    lineHeight: 1.75,
+    fontSize: "17px",
+    lineHeight: 1.72,
   },
 
   section: {
     maxWidth: "1180px",
     margin: "0 auto",
-    padding: "24px 6% 40px",
+    padding: "20px 6% 38px",
   },
 
   serviceGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-    gap: "20px",
+    gap: "18px",
   },
 
   card: {
-    minHeight: "280px",
-    padding: "34px",
-    borderRadius: "16px",
+    minHeight: "250px",
+    padding: "30px",
+    borderRadius: "14px",
     background:
-      "linear-gradient(180deg, rgba(13,38,62,0.95), rgba(8,28,47,0.98))",
-    border: "1px solid rgba(88,164,228,0.17)",
-    boxShadow: "0 18px 45px rgba(0,0,0,0.14)",
+      "linear-gradient(180deg, rgba(13,38,62,0.94), rgba(8,28,47,0.98))",
+    border: "1px solid rgba(88,164,228,0.16)",
+    boxShadow: "0 16px 38px rgba(0,0,0,0.13)",
   },
 
   iconBox: {
-    width: "48px",
-    height: "48px",
-    border: "1px solid rgba(68,166,245,0.32)",
-    borderRadius: "10px",
+    width: "46px",
+    height: "46px",
+    border: "1px solid rgba(68,166,245,0.30)",
+    borderRadius: "9px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     color: "#55abf4",
     fontWeight: 700,
-    marginBottom: "28px",
+    fontSize: "13px",
+    marginBottom: "24px",
   },
 
   cardTitle: {
     color: "#ffffff",
-    fontSize: "21px",
+    fontSize: "20px",
     lineHeight: 1.3,
-    marginBottom: "16px",
+    marginBottom: "14px",
   },
 
   cardText: {
     color: "#aebfd0",
     fontSize: "15px",
-    lineHeight: 1.7,
+    lineHeight: 1.68,
     margin: 0,
   },
 
   capabilitiesSection: {
-    maxWidth: "1120px",
+    maxWidth: "1180px",
     margin: "0 auto",
-    padding: "20px 6% 110px",
+    padding: "12px 6% 90px",
   },
 
   capabilityGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(175px, 1fr))",
     gap: 0,
     borderTop: "1px solid rgba(100,168,224,0.20)",
   },
 
   capability: {
-    padding: "22px 18px 14px 0",
+    padding: "20px 18px 14px 0",
   },
 
   capabilityTitle: {
@@ -528,62 +540,65 @@ const styles = {
   },
 
   experienceSection: {
-    padding: "100px 6%",
+    padding: "86px 6%",
     backgroundColor: "#091c2f",
     borderTop: "1px solid rgba(103,171,225,0.12)",
     borderBottom: "1px solid rgba(103,171,225,0.12)",
   },
 
   experienceInner: {
-    maxWidth: "1000px",
+    maxWidth: "980px",
     margin: "0 auto",
   },
 
   experienceHeading: {
-    maxWidth: "800px",
+    maxWidth: "780px",
     color: "#ffffff",
-    fontSize: "clamp(34px, 4vw, 50px)",
-    lineHeight: 1.12,
-    letterSpacing: "-1.1px",
-    margin: "0 0 24px",
+    fontSize: "clamp(32px, 3.7vw, 48px)",
+    lineHeight: 1.1,
+    letterSpacing: "-1px",
+    margin: "0 0 22px",
   },
 
   experienceText: {
     maxWidth: "820px",
     color: "#afc0d0",
     fontSize: "17px",
-    lineHeight: 1.75,
+    lineHeight: 1.72,
+    marginBottom: "16px",
   },
 
   contactSection: {
-    padding: "110px 6%",
+    padding: "94px 6%",
     backgroundColor: "#061321",
   },
 
   contactInner: {
-    maxWidth: "850px",
+    maxWidth: "820px",
     margin: "0 auto",
     textAlign: "center",
   },
 
   contactHeading: {
     color: "#ffffff",
-    fontSize: "clamp(36px, 4vw, 52px)",
-    margin: "0 0 18px",
+    fontSize: "clamp(34px, 4vw, 50px)",
+    margin: "0 0 16px",
+    letterSpacing: "-1px",
   },
 
   contactText: {
     maxWidth: "650px",
-    margin: "0 auto 30px",
+    margin: "0 auto 28px",
     color: "#aebfd0",
     fontSize: "17px",
-    lineHeight: 1.7,
+    lineHeight: 1.68,
   },
 
   footer: {
-    padding: "30px 6%",
+    padding: "28px 6%",
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     gap: "20px",
     flexWrap: "wrap",
     color: "#758ba0",
