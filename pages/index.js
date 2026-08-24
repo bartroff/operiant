@@ -23,7 +23,7 @@ export default function Home() {
           </a>
 
           <a href="#contact" className="navButton">
-            Discuss an engagement
+            Contact
           </a>
         </div>
       </nav>
