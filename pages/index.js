@@ -6,7 +6,7 @@ export default function Home() {
       <nav className="nav">
         <a href="#top" className="navBrand">
           <img
-            src="Operiant_logo_transparent_Logo_Only.png"
+            src="/Operiant_logo_transparent_Logo_Only.png"
             alt="Operiant"
             className="navLogo"
           />
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="heroContent">
             <div className="brandLockup">
               <img
-                src="Operiant_logo_transparent_Logo_Only.png"
+                src="/Operiant_logo_transparent_Logo_Only.png"
                 alt="Operiant"
                 className="heroLogo"
               />
