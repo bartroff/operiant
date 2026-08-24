@@ -1,0 +1,1043 @@
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #061321;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Inter,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background-color: #061321;
+  color: #eaf2f8;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.nav {
+  min-height: 72px;
+
+  padding: 0 5.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  background-color: rgba(5, 17, 29, 0.95);
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(104, 167, 220, 0.12);
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  font-size: 18px;
+
+  white-space: nowrap;
+}
+
+.navLogo {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+}
+
+.navLink {
+  color: #b7c7d8;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.navButton {
+  padding: 10px 18px;
+
+  border-radius: 6px;
+
+  background-color: #258be8;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(37, 139, 232, 0.18);
+}
+
+.navButton:hover {
+  background-color: #3599f2;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  min-height: 620px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("images/operiant-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 16, 29, 0.88) 0%,
+      rgba(4, 16, 29, 0.74) 34%,
+      rgba(4, 16, 29, 0.38) 58%,
+      rgba(4, 16, 29, 0.08) 100%
+    );
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+
+  width: 89%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.heroContent {
+  max-width: 690px;
+}
+
+.brandLockup {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 26px;
+}
+
+.heroLogo {
+  width: 96px;
+  height: 96px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 8px 24px rgba(36, 145, 235, 0.14)
+    );
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+
+  color: #58aef5;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+}
+
+.heroTitle {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 4.4vw, 66px);
+  font-weight: 700;
+
+  line-height: 1.02;
+
+  letter-spacing: -1.7px;
+}
+
+.accent {
+  color: #48a7f5;
+}
+
+.heroText {
+  max-width: 700px;
+
+  margin-top: 26px;
+  margin-bottom: 10px;
+
+  color: #d5e1eb;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.heroSubtext {
+  max-width: 720px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #aebfd0;
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.primaryButton {
+  display: inline-block;
+
+  padding: 13px 22px;
+
+  border-radius: 6px;
+
+  background-color: #258be8;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow:
+    0 8px 22px rgba(21, 111, 194, 0.22);
+}
+
+.primaryButton:hover {
+  background-color: #3599f2;
+
+  transform: translateY(-1px);
+}
+
+.secondaryButton {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  border:
+    1px solid rgba(157, 190, 221, 0.28);
+
+  border-radius: 6px;
+
+  background-color: rgba(5, 19, 33, 0.18);
+
+  color: #c8d8e7;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.secondaryButton:hover {
+  color: #ffffff;
+
+  border-color: rgba(157, 190, 221, 0.48);
+
+  background-color: rgba(12, 37, 60, 0.52);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.introSection {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 62px 6% 24px;
+}
+
+.sectionLabel {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: #4fa8f4;
+
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+}
+
+.largeHeading {
+  max-width: 760px;
+
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 3.5vw, 46px);
+
+  line-height: 1.08;
+
+  letter-spacing: -1px;
+}
+
+.introText {
+  max-width: 860px;
+
+  margin: 0;
+
+  color: #aebfd0;
+
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.section {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 20px 6% 38px;
+}
+
+.serviceGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.card {
+  min-height: 250px;
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(13, 38, 62, 0.94),
+      rgba(8, 28, 47, 0.98)
+    );
+
+  border:
+    1px solid rgba(88, 164, 228, 0.16);
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.13);
+}
+
+.iconBox {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border:
+    1px solid rgba(68, 166, 245, 0.30);
+
+  border-radius: 9px;
+
+  color: #55abf4;
+
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.cardTitle {
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+}
+
+.cardText {
+  margin: 0;
+
+  color: #aebfd0;
+
+  font-size: 15px;
+
+  line-height: 1.68;
+}
+
+
+/* =========================================================
+   CAPABILITIES
+   ========================================================= */
+
+.capabilitiesSection {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 12px 6% 70px;
+}
+
+.capabilityGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  border-top:
+    1px solid rgba(100, 168, 224, 0.20);
+}
+
+.capability {
+  padding: 20px 18px 14px 0;
+}
+
+.capabilityTitle {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.capabilityText {
+  color: #8298ac;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experienceSection {
+  padding: 86px 6%;
+
+  background-color: #091c2f;
+
+  border-top:
+    1px solid rgba(103, 171, 225, 0.12);
+
+  border-bottom:
+    1px solid rgba(103, 171, 225, 0.12);
+}
+
+.experienceInner {
+  max-width: 1040px;
+
+  margin: 0 auto;
+}
+
+.experienceHeading {
+  max-width: 780px;
+
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-size: clamp(32px, 3.7vw, 48px);
+
+  line-height: 1.1;
+
+  letter-spacing: -1px;
+}
+
+.experienceText {
+  max-width: 820px;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: #afc0d0;
+
+  font-size: 17px;
+
+  line-height: 1.72;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contactSection {
+  padding: 94px 6%;
+
+  background-color: #061321;
+}
+
+.contactInner {
+  max-width: 820px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.contactHeading {
+  margin: 0 0 16px;
+
+  color: #ffffff;
+
+  font-size: clamp(34px, 4vw, 50px);
+
+  letter-spacing: -1px;
+}
+
+.contactText {
+  max-width: 650px;
+
+  margin: 0 auto 28px;
+
+  color: #aebfd0;
+
+  font-size: 17px;
+
+  line-height: 1.68;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  padding: 28px 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  background-color: #04101c;
+
+  color: #758ba0;
+
+  border-top:
+    1px solid rgba(99, 164, 216, 0.10);
+
+  font-size: 13px;
+}
+
+.footerTagline {
+  color: #71889e;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .nav {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .navLinks {
+    gap: 18px;
+  }
+
+  .hero {
+    min-height: 590px;
+
+    /*
+      Keeps more of the control-room side visible
+      while retaining useful dark space for the text.
+    */
+    background-position: 63% center;
+  }
+
+  .heroInner {
+    width: 90%;
+  }
+
+  .heroContent {
+    max-width: 620px;
+  }
+
+  .heroTitle {
+    font-size: clamp(40px, 7vw, 58px);
+  }
+
+  .heroText {
+    max-width: 600px;
+  }
+
+  .heroSubtext {
+    max-width: 620px;
+  }
+
+  .serviceGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .serviceGrid .card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: none;
+  }
+
+  .capabilityGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .capability {
+    padding-right: 28px;
+  }
+
+  .experienceSection {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .contactSection {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .nav {
+    min-height: 64px;
+
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .navBrand {
+    gap: 10px;
+
+    font-size: 14px;
+
+    letter-spacing: 2.2px;
+  }
+
+  .navLogo {
+    width: 34px;
+    height: 34px;
+  }
+
+  /*
+    Hide the two secondary navigation links.
+    The engagement CTA remains available.
+  */
+  .navLink {
+    display: none;
+  }
+
+  .navLinks {
+    gap: 0;
+  }
+
+  .navButton {
+    padding: 9px 12px;
+
+    font-size: 11px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+
+    padding-top: 48px;
+    padding-bottom: 52px;
+
+    align-items: flex-start;
+
+    /*
+      Shifts the infrastructure/control-room content
+      toward the right side behind the copy.
+    */
+    background-position: 70% center;
+  }
+
+  .heroOverlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(4, 16, 29, 0.97) 0%,
+        rgba(4, 16, 29, 0.92) 52%,
+        rgba(4, 16, 29, 0.67) 100%
+      );
+  }
+
+  .heroInner {
+    width: calc(100% - 36px);
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+
+  .brandLockup {
+    margin-bottom: 22px;
+  }
+
+  .heroLogo {
+    width: 74px;
+    height: 74px;
+  }
+
+  .eyebrow {
+    margin-bottom: 15px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 1.65px;
+  }
+
+  .heroTitle {
+    max-width: 100%;
+
+    font-size: clamp(34px, 10vw, 46px);
+
+    line-height: 1.04;
+
+    letter-spacing: -1.1px;
+  }
+
+  .heroText {
+    margin-top: 23px;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+  }
+
+  .heroSubtext {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .heroActions {
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 25px;
+  }
+
+  .heroActions .primaryButton,
+  .heroActions .secondaryButton {
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+  /* INTRO */
+
+  .introSection {
+    padding:
+      50px
+      18px
+      20px;
+  }
+
+  .sectionLabel {
+    font-size: 10px;
+
+    letter-spacing: 1.9px;
+  }
+
+  .largeHeading {
+    font-size: clamp(30px, 8vw, 36px);
+
+    line-height: 1.1;
+  }
+
+  .introText {
+    font-size: 16px;
+
+    line-height: 1.67;
+  }
+
+
+  /* SERVICES */
+
+  .section {
+    padding:
+      18px
+      18px
+      34px;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .serviceGrid .card:last-child {
+    grid-column: auto;
+  }
+
+  .card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .iconBox {
+    margin-bottom: 20px;
+  }
+
+  .cardTitle {
+    font-size: 19px;
+  }
+
+  .cardText {
+    font-size: 14px;
+  }
+
+
+  /* CAPABILITIES */
+
+  .capabilitiesSection {
+    padding:
+      6px
+      18px
+      54px;
+  }
+
+  .capabilityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability {
+    padding:
+      15px
+      0;
+
+    border-bottom:
+      1px solid rgba(100, 168, 224, 0.12);
+  }
+
+  .capability:last-child {
+    border-bottom: none;
+  }
+
+  .capabilityTitle {
+    font-size: 14px;
+  }
+
+
+  /* EXPERIENCE */
+
+  .experienceSection {
+    padding:
+      58px
+      18px;
+  }
+
+  .experienceHeading {
+    font-size: clamp(30px, 8vw, 36px);
+
+    line-height: 1.12;
+  }
+
+  .experienceText {
+    font-size: 16px;
+
+    line-height: 1.65;
+  }
+
+
+  /* CONTACT */
+
+  .contactSection {
+    padding:
+      60px
+      18px;
+  }
+
+  .contactHeading {
+    font-size: clamp(32px, 9vw, 40px);
+  }
+
+  .contactText {
+    font-size: 16px;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding:
+      24px
+      18px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+  .navBrand span {
+    font-size: 13px;
+  }
+
+  /*
+    The full phrase becomes fairly wide on small phones.
+    We keep it usable but compact.
+  */
+  .navButton {
+    max-width: 108px;
+
+    padding:
+      8px
+      9px;
+
+    text-align: center;
+
+    line-height: 1.15;
+  }
+
+  .hero {
+    background-position: 74% center;
+  }
+
+  .heroLogo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .heroTitle {
+    font-size: clamp(32px, 9.7vw, 40px);
+  }
+}
