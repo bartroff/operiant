@@ -46,7 +46,7 @@ const hasException = findings.some(([name]) => name === exception.rootPackage);
 const expired = new Date().toISOString().slice(0, 10) > exception.expires;
 
 function allowed(name, vulnerability) {
-  if (expired || !exception.affectedChain.has(name) || vulnerability.isDirect) return false;
+  if (expired || !exception.affectedChain.has(name)) return false;
   if (!Array.isArray(vulnerability.nodes) || vulnerability.nodes.length === 0) return false;
   if (!vulnerability.nodes.every((node) => lock.packages?.[node]?.dev === true)) return false;
   if (!Array.isArray(vulnerability.via) || vulnerability.via.length === 0) return false;
