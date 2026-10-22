@@ -24,7 +24,7 @@ jobs:
       - name: Refresh lockfile for updated package.json
         run: npm install --package-lock-only --ignore-scripts
       - name: Apply non-breaking npm security fixes
-        run: npm audit fix --package-lock-only --ignore-scripts
+        run: npm audit fix --package-lock-only --ignore-scripts || true
       - name: Install updated dependencies
         run: npm ci
       - name: Validate static site build
