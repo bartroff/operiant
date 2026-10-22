@@ -43,26 +43,25 @@ export default function Home() {
             </div>
 
             <p className="eyebrow">
-              SENIOR IT SECURITY &amp; TECHNOLOGY LEADERSHIP
+              TECHNOLOGY LEADERSHIP &amp; TRANSFORMATION
             </p>
 
             <h1 className="heroTitle">
-              IT Security Leadership.
+              Turning Technology Complexity
               <br />
-              Critical Infrastructure.
-              <br />
-              <span className="accent">Stable Operations.</span>
+              <span className="accent">into Business Value.</span>
             </h1>
 
             <p className="heroText">
-              Senior advisory and interim leadership for security-critical and
-              business-critical technology environments.
+              Senior technology advisory, enterprise architecture, cybersecurity
+              and operational transformation — combining strategic leadership
+              with hands-on execution.
             </p>
 
             <p className="heroSubtext">
-              Helping organisations strengthen cyber security, deliver complex
-              security programmes, work effectively with authorities and
-              regulators, and maintain resilient, stable operations.
+              Helping organisations align technology with business priorities,
+              simplify complex environments and turn transformation into
+              measurable operational outcomes.
             </p>
 
             <div className="heroActions">
@@ -80,17 +79,18 @@ export default function Home() {
 
       {/* INTRODUCTION */}
       <section className="introSection">
-        <p className="sectionLabel">FOCUSED LEADERSHIP</p>
+        <p className="sectionLabel">STRATEGY MEETS EXECUTION</p>
 
         <h2 className="largeHeading">
-          Security leadership. Operational resilience.
+          From technology strategy to lasting operational impact.
         </h2>
 
         <p className="introText">
-          Security and operational stability cannot be managed in isolation.
-          Operiant focuses on environments where cyber security, infrastructure,
-          resilience, regulatory requirements and dependable day-to-day
-          operations must work together.
+          Operiant bridges enterprise architecture, technology leadership and
+          operational delivery. Whether the challenge is modernising platforms,
+          improving service performance, strengthening cyber resilience or
+          integrating technology after change, the focus is on practical
+          solutions that deliver business value.
         </p>
       </section>
 
@@ -99,44 +99,41 @@ export default function Home() {
         <div className="serviceGrid">
           <article className="card">
             <div className="iconBox">01</div>
-
-            <h3 className="cardTitle">
-              Security Leadership &amp; Operations
-            </h3>
-
+            <h3 className="cardTitle">Technology Leadership &amp; Advisory</h3>
             <p className="cardText">
-              Executive-level leadership across cyber security, operational
-              risk, governance, incident preparedness and resilient IT
-              operations.
+              Strategic technology advisory and interim leadership that
+              connect business priorities, governance, investment decisions
+              and effective execution across complex organisations.
             </p>
           </article>
 
           <article className="card">
             <div className="iconBox">02</div>
-
-            <h3 className="cardTitle">
-              Critical Infrastructure &amp; Security Programmes
-            </h3>
-
+            <h3 className="cardTitle">Enterprise Architecture &amp; Transformation</h3>
             <p className="cardText">
-              Leadership of complex security initiatives across critical
-              infrastructure and business-critical environments — from
-              strategy and architecture through implementation and operational
-              adoption.
+              Enterprise and solution architecture, technology roadmaps,
+              platform modernisation and transformation programmes — with
+              a focus on simplification, alignment and measurable outcomes.
             </p>
           </article>
 
           <article className="card">
             <div className="iconBox">03</div>
-
-            <h3 className="cardTitle">
-              Authorities, Compliance &amp; Strategic Partnerships
-            </h3>
-
+            <h3 className="cardTitle">Cybersecurity &amp; Operational Resilience</h3>
             <p className="cardText">
-              Supporting effective collaboration with public authorities,
-              regulators, law enforcement, suppliers and strategic partners in
-              security-sensitive environments.
+              Security governance, risk and compliance, critical
+              infrastructure, security programmes and resilient operations
+              for business-critical technology environments.
+            </p>
+          </article>
+
+          <article className="card">
+            <div className="iconBox">04</div>
+            <h3 className="cardTitle">Operational Excellence &amp; Automation</h3>
+            <p className="cardText">
+              Improve IT service delivery through operating models,
+              process optimisation, ServiceNow, observability and automation
+              that reduce complexity and strengthen performance.
             </p>
           </article>
         </div>
@@ -146,41 +143,24 @@ export default function Home() {
       <section className="capabilitiesSection">
         <div className="capabilityGrid">
           <div className="capability">
-            <span className="capabilityTitle">Cyber Security</span>
-            <span className="capabilityText">
-              Governance, architecture &amp; risk
-            </span>
+            <span className="capabilityTitle">Enterprise Architecture</span>
+            <span className="capabilityText">Strategy, governance &amp; solution design</span>
           </div>
-
           <div className="capability">
-            <span className="capabilityTitle">Security Programmes</span>
-            <span className="capabilityText">
-              Leadership, delivery &amp; assurance
-            </span>
+            <span className="capabilityTitle">Transformation &amp; M&amp;A</span>
+            <span className="capabilityText">Integration, modernisation &amp; execution</span>
           </div>
-
           <div className="capability">
-            <span className="capabilityTitle">Critical Infrastructure</span>
-            <span className="capabilityText">
-              Security, resilience &amp; continuity
-            </span>
+            <span className="capabilityTitle">Cloud &amp; Infrastructure</span>
+            <span className="capabilityText">Platforms, networks &amp; optimisation</span>
           </div>
-
           <div className="capability">
-            <span className="capabilityTitle">
-              Authorities &amp; Compliance
-            </span>
-
-            <span className="capabilityText">
-              Regulatory &amp; stakeholder collaboration
-            </span>
+            <span className="capabilityTitle">Cybersecurity &amp; Compliance</span>
+            <span className="capabilityText">Critical infrastructure, NIS2 &amp; DORA</span>
           </div>
-
           <div className="capability">
-            <span className="capabilityTitle">Operational Resilience</span>
-            <span className="capabilityText">
-              Stability, continuity &amp; risk reduction
-            </span>
+            <span className="capabilityTitle">ServiceNow &amp; Automation</span>
+            <span className="capabilityText">ITSM, workflows &amp; operational insight</span>
           </div>
         </div>
       </section>
@@ -188,23 +168,25 @@ export default function Home() {
       {/* EXPERIENCE */}
       <section id="experience" className="experienceSection">
         <div className="experienceInner">
-          <p className="sectionLabel">SENIOR LEADERSHIP PERSPECTIVE</p>
+          <p className="sectionLabel">EXPERIENCE THAT DELIVERS</p>
 
           <h2 className="experienceHeading">
-            Strengthening security without losing operational control.
+            Experience That Connects Strategy with Execution.
           </h2>
 
           <p className="experienceText">
-            Operiant supports organisations that need more than isolated
-            technical advice: senior ownership of security priorities,
-            disciplined execution across multiple stakeholders, and technology
-            operations that remain stable while transformation is taking place.
+            Built on more than 25 years of international technology leadership
+            across enterprise IT, telecommunications and mission-critical
+            operations. Experience spans global teams, complex infrastructure,
+            cybersecurity, enterprise platforms and large-scale transformation
+            — with a consistent focus on business outcomes.
           </p>
 
           <p className="experienceText">
-            Engagements can include advisory assignments, interim leadership,
-            security programmes, operational resilience initiatives and
-            strategic technology transformation.
+            Operiant supports advisory and interim leadership engagements,
+            enterprise architecture initiatives, transformation and M&amp;A
+            integration, cybersecurity programmes, and operational excellence
+            across technology-intensive organisations.
           </p>
         </div>
       </section>
@@ -219,8 +201,9 @@ export default function Home() {
           </h2>
 
           <p className="contactText">
-            For senior IT security leadership, critical infrastructure,
-            operational resilience or security programme requirements.
+            For technology leadership, enterprise architecture, transformation,
+            cybersecurity or operational improvement — let&apos;s explore
+            how Operiant can help.
           </p>
 
           <a
@@ -239,7 +222,7 @@ export default function Home() {
         </span>
 
         <span className="footerTagline">
-          Security · Resilience · Stable Operations
+          Technology Leadership · Transformation · Cybersecurity · Operational Excellence
         </span>
       </footer>
     </main>
